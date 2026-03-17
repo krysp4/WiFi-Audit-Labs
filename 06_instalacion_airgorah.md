@@ -55,7 +55,7 @@ sudo dpkg -i --ignore-depends=policykit-1 airgorah_0.7.3_x86_64.deb
 Una vez instalado, podemos lanzar la aplicación simplemente escribiendo su nombre en la terminal:
 
 ```bash
-airgorah
+sudo airgorah
 ```
 > [!NOTE]
 > Es posible que al ejecutarlo veas algunos avisos (Warnings) sobre drivers de video (DRI3) o temas de GTK, pero la aplicación debería funcionar correctamente para auditar redes.
