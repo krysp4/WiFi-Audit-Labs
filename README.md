@@ -32,7 +32,9 @@ Haz clic en cada sección para acceder a los apuntes detallados:
 
 ## 🛠️ Requisitos del Laboratorio
 
-- 🐧 **Sistema**: Kali Linux o Parrot OS.
+- 🐧 **Sistema**: Kali Linux o otros.
 - 📶 **Hardware**: Tarjeta WiFi con soporte para **Modo Monitor** e **Inyección**.
 - 🧰 **Software**: Suite `aircrack-ng` y `Wireshark`.
 
+> [!CAUTION]
+> **Aviso Legal**: Esta guía tiene fines exclusivamente éticos y educativos. Realizar pruebas de intrusión en redes sin autorización es ilegal y punible.
