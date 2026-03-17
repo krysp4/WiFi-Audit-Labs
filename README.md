@@ -19,6 +19,8 @@ Haz clic en cada sección para acceder a los apuntes detallados:
 ### ⚔️ Fase 3: Explotación
 *   [**03 - Captura de Paquetes y Ataques**](./03_captura_y_ataque.md)
     *   *Captura dirigida con `airodump-ng` y ataques de desautenticación (Deauth).*
+*   [**06 - Instalación de Airgorah**](./06_instalacion_airgorah.md)
+    *   *Guía paso a paso para instalar Airgorah y resolver errores de dependencias.*
 
 ### 🛠️ Fase 4: Análisis
 *   [**05 - Análisis de Capturas y Handshake**](./05_wireshark.md)
