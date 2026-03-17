@@ -9,7 +9,7 @@ Este comando devuelve la tarjeta a su nombre original (`wlan0`) y modo normal.
 ```bash
 sudo airmon-ng stop wlan0
 ```
-![Captura de pantalla de airmon stop](ruta/a/tu/foto_airmon_stop.png)
+![Captura de pantalla de airmon stop](image/Imagen11.png)
 
 ## Reiniciar Servicios de Red
 

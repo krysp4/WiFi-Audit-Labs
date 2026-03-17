@@ -18,6 +18,7 @@ sudo airmon-ng start wlan0
 > Si el comando te avisa de "conflicting processes", puedes ejecutar `sudo airmon-ng check kill` para cerrarlos automáticamente.
 
 ![Captura de pantalla de airmon-ng start](image/Imagen4.png)
+![Captura de pantalla de aireplay test](image/Imagen5.png)
 
 ## Test de Inyección
 
@@ -26,8 +27,6 @@ No todas las tarjetas que entran en modo monitor pueden "inyectar" paquetes (es 
 ```bash
 sudo aireplay-ng --test wlan0
 ```
-
-![Captura de pantalla de aireplay test](image/Imagen5.png)
 
 
 **¿Qué buscamos aquí?**

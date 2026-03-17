@@ -27,7 +27,6 @@ sudo airodump-ng -c 1 --bssid 06:A0:65:C2:90:A6 -w captura wlan0
 
 ![Captura de pantalla con handshake](image/Imagen8.png)
 
-![Captura de pantalla con handshake](image/Imagen10.png)
 
 
 ---
@@ -51,6 +50,8 @@ sudo aireplay-ng -0 10 -a 06:A0:65:C2:90:A6 wlan0
 - `-0`: Indica que el ataque es de **Desautenticación**.
 - `10`: Número de ráfagas (ataques). 
 - `-a`: El BSSID del punto de acceso (Access Point).
+
+![Captura de pantalla con handshake](image/Imagen10.png)
 
 ### 3. Ataque a un Cliente Específico
 Si solo quieres molestar o capturar el handshake de un dispositivo concreto (ej. un móvil):
