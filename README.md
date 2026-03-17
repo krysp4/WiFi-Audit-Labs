@@ -1,22 +1,38 @@
-# WiFi-Audit-Labs: Guía de Auditoría de Redes Inalámbricas
+# 🛡️ WiFi-Audit-Labs: Guía de Auditoría Inalámbrica
 
-Esta serie de apuntes está diseñada para documentar el proceso de auditoría de redes WiFi de forma educativa, desde el reconocimiento inicial hasta la captura de tráfico y ataques controlados.
-
-> [!IMPORTANT]
-> Esta guía tiene fines exclusivamente educativos y de auditoría ética. El acceso a redes sin autorización es ilegal.
-
-## Índice de Contenidos
-
-1. [**01 - Reconocimiento de Red**](file:///c:/Users/adria/Documents/A%20Educem/apuntesHardcore/01_reconocimiento.md): Verificación de la antena y escaneo inicial.
-2. [**02 - Activación del Modo Monitor**](file:///c:/Users/adria/Documents/A%20Educem/apuntesHardcore/02_modo_monitor.md): Preparación de la tarjeta para inyección de paquetes.
-3. [**03 - Captura de Paquetes y Ataques**](file:///c:/Users/adria/Documents/A%20Educem/apuntesHardcore/03_captura_y_ataque.md): Obtención del handshake y ataques de desautenticación.
-4. [**04 - Restauración del Sistema**](file:///c:/Users/adria/Documents/A%20Educem/apuntesHardcore/04_restauracion.md): Volver a la configuración de red normal.
-5. [**05 - Análisis de Capturas y Handshake**](file:///c:/Users/adria/Documents/A%20Educem/apuntesHardcore/05_wireshark.md): Análisis con Wireshark y extracción de hash con Aircrack-ng.
+Esta serie de apuntes documenta el proceso completo de auditoría de redes WiFi de forma educativa y estructurada. Ideal para laboratorios de ciberseguridad.
 
 ---
 
-## Requisitos Previos
+## 📑 Índice de Contenidos
 
-- Un sistema Linux (o máquina virtual con Kali Linux/Parrot OS).
-- Una tarjeta WiFi compatible con **Inyección de Paquetes** y **Modo Monitor**.
-- Suite `aircrack-ng` instalada.
+Haz clic en cada sección para acceder a los apuntes detallados:
+
+### 🔍 Fase 1: Reconocimiento
+*   [**01 - Reconocimiento de Red**](./01_reconocimiento.md)
+    *   *Verificación de hardware, herramientas `ifconfig`, `iwconfig` y escaneo con `nmcli`.*
+
+### 📡 Fase 2: Configuración
+*   [**02 - Activación del Modo Monitor**](./02_modo_monitor.md)
+    *   *Uso de `airmon-ng` y test de inyección de paquetes con `aireplay-ng`.*
+
+### ⚔️ Fase 3: Explotación
+*   [**03 - Captura de Paquetes y Ataques**](./03_captura_y_ataque.md)
+    *   *Captura dirigida con `airodump-ng` y ataques de desautenticación (Deauth).*
+
+### 🛠️ Fase 4: Análisis
+*   [**05 - Análisis de Capturas y Handshake**](./05_wireshark.md)
+    *   *Identificación de SSID con Wireshark y extracción de hashes con Aircrack-ng.*
+
+### 🧹 Fase 5: Post-Auditoría
+*   [**04 - Restauración del Sistema**](./04_restauracion.md)
+    *   *Limpieza de procesos y restauración del NetworkManager.*
+
+---
+
+## 🛠️ Requisitos del Laboratorio
+
+- 🐧 **Sistema**: Kali Linux o Parrot OS.
+- 📶 **Hardware**: Tarjeta WiFi con soporte para **Modo Monitor** e **Inyección**.
+- 🧰 **Software**: Suite `aircrack-ng` y `Wireshark`.
+
