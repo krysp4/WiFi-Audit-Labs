@@ -11,6 +11,26 @@ sudo airodump-ng wlan0
 ```
 ![Captura de pantalla de airodump general](image/Imagen7.png)
 
+**¿Qué estamos viendo en pantalla?** 
+
+La pantalla se divide en dos secciones principales:
+
+### Parte Superior: Puntos de Acceso (Routers)
+- **BSSID**: La dirección MAC del router.
+- **PWR**: Nivel de señal. Cuanto más cerca de 0, mejor (ej: -30 es excelente, -80 es débil).
+- **Beacons**: Paquetes de "anuncio" que envía el router.
+- **#Data**: Número de paquetes de datos capturados (útil para ver si hay actividad).
+- **CH**: Canal en el que emite la red.
+- **ENC / CIPHER / AUTH**: El tipo de seguridad (WPA2, CCMP, PSK...).
+- **ESSID**: El nombre de la red WiFi.
+
+### Parte Inferior: Estaciones (Clientes conectados)
+- **STATION**: La dirección MAC del dispositivo conectado (móvil, PC, etc.).
+- **BSSID (en esta sección)**: Indica a qué router de la lista de arriba está conectado ese cliente. Si dice `(not associated)`, el dispositivo está buscando red pero no está conectado.
+- **PWR**: Señal del dispositivo cliente.
+- **Frames**: Cantidad de paquetes enviados por ese cliente.
+- **Probes**: Nombres de redes que el dispositivo ha buscado anteriormente.
+
 ---
 
 ## Captura Dirigida (Handshake)
@@ -38,7 +58,7 @@ Si no queremos esperar a que un cliente se conecte solo, podemos forzar su desco
 ### 1. Sincronizar el canal
 Obligamos a la tarjeta a estar en la misma frecuencia que el router.
 ```bash
-sudo iwconfig wlan0mon channel 6
+sudo iwconfig wlan0 channel 6
 ```
 
 ### 2. Lanzar el Ataque Global
